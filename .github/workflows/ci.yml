@@ -37,9 +37,9 @@ jobs:
         with:
           packages: ${{ env.BUILD_REQUIRES }}
           site: |
-            https://cygwin.paktolos.net
             http://mirrors.kernel.org/sourceware/cygwin/
-          pubkeys: https://kgraefe.paktolos.net/AA73A441.bin
+            https://ftp.jaist.ac.jp/pub/cygwin/
+          pubkeys: https://cygwin.com/key/pubring.asc
         timeout-minutes: 30
       - name: Cygport download
         run: cygport neovim.cygport download

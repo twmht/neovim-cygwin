@@ -64,7 +64,7 @@ jobs:
           cd "$DIST_DIR"
           tar -cJvaf "$DIST_ARCHIVE" */
       - name: Store build results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.DIST_ARCHIVE }}
           path: ${{ env.DIST_DIR }}/${{ env.DIST_ARCHIVE }}
